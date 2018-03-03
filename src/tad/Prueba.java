@@ -14,7 +14,7 @@ import java.util.Iterator;
 class Prueba{
     public static void main(String[] args) {
         // ========== Creación de una lista enlazada ============
-        LinkedList<String> l = new LinkedList("nodo 0");
+        LinkedList<String> l = new LinkedList<>("nodo 0");
         l.add("nodo 1");
         l.add("nodo 2");
         //----------- Inserción de un elemento ------------------
@@ -31,7 +31,7 @@ class Prueba{
         }
         // ---------- Creación de una lista enlazada vacía ---------
         // ---------- Comprobación del método isEmpty() ------------
-        LinkedList l2 = new LinkedList();
+        LinkedList<String> l2 = new LinkedList<>();
         System.out.println("Lista enlazada l2: => " + l2);
         System.out.println("l2 ¿está vacía?: => " + l2.isEmpty());
 
@@ -58,7 +58,7 @@ class Prueba{
         }
         // =========== Creación de una lista doblemente enlazada ==============
         // Introducción de elementos y comprobación del tamaño de la lista
-        DoubleLinkedList dll = new DoubleLinkedList(100);
+        DoubleLinkedList<Integer> dll = new DoubleLinkedList<>(100);
         System.out.println("Lista doblemente enlazada dll: => " + dll);
         System.out.println("De tamaño: " + dll.size());
         dll.add(200);
@@ -97,7 +97,7 @@ class Prueba{
         }
 
         // =========== Creación de una Pila implementada con una lista enlazada =============
-        Stack pila = new Stack();
+        Stack<String> pila = new Stack<>();
 
         pila.push("Apilado 1");
         pila.push("Apilado 2");
@@ -125,7 +125,7 @@ class Prueba{
 
 
         // =========== Creación de una Cola implementada con una lista enlazada =============
-        Queue q = new Queue();
+        Queue<String> q = new Queue<>();
         q.enqueue("Encolado 1");
         q.enqueue("Encolado 2");
         q.enqueue("Encolado 3");
