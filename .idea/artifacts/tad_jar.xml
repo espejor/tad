@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="tad:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/tad_jar</output-path>
+    <root id="archive" name="tad.jar">
+      <element id="module-output" name="tad" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../librerias/Fecha.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
